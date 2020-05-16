@@ -1,30 +1,72 @@
 // Media
 $smartphone: "only screen and (min-width: 500px)";
 $tablet: "only screen and (min-width: 768px)";
-$small-desktop: "only screen and (min-width: 1024px)";
+$small-desktop: "only screen and (min-width: 1025px)";
 $desktop: "only screen and (min-width: 1400px)";
 
 // Fonts
 $montserrat: 'Montserrat',
 sans-serif;
-$opensans: 'Open Sans',
+$sans: 'Noto Sans JP',
 sans-serif;
 $oswald: 'Oswald',
 sans-serif;
 
-// Weight of fonts
-$light: "font-weight: 300";
-$regular: "font-weight: 400";
-$medium: "font-weight: 500";
-$semi-bold: "font-weight: 600";
-$bold: "font-weight: 700";
+// Weight of font
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
 
 // Colors
 $green: #95AE51;
 $lightgrey: #F3F3F3;
 $white: #ffffff;
 $grey: #BBBBBB;
+$darkgrey: #333333;
 $black: #000000;
 
 // Classes
-button.mc-black {}
+.color-green {
+    color: $green;
+}
+
+.bold {
+    font-weight: $bold;
+}
+
+button.mc-black {
+    font-family: $montserrat;
+    background-color: $darkgrey;
+    border: none;
+    color: $white;
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-weight: $semi-bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1.3rem;
+    -webkit-text-stroke: 0.3px $black;
+    transition: background .3s,
+        color .3s;
+
+    @media #{$smartphone} {
+        font-size: 1.8rem;
+        padding: 14px 40px;
+    }
+
+    @media #{$small-desktop} {
+        font-size: 1.7rem;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    @media #{$desktop} {
+        font-size: 1.9rem;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $green;
+        color: $black;
+    }
+}
