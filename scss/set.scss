@@ -1,0 +1,30 @@
+// Media
+$smartphone: "only screen and (min-width: 500px)";
+$tablet: "only screen and (min-width: 768px)";
+$small-desktop: "only screen and (min-width: 1024px)";
+$desktop: "only screen and (min-width: 1400px)";
+
+// Fonts
+$montserrat: 'Montserrat',
+sans-serif;
+$opensans: 'Open Sans',
+sans-serif;
+$oswald: 'Oswald',
+sans-serif;
+
+// Weight of fonts
+$light: "font-weight: 300";
+$regular: "font-weight: 400";
+$medium: "font-weight: 500";
+$semi-bold: "font-weight: 600";
+$bold: "font-weight: 700";
+
+// Colors
+$green: #95AE51;
+$lightgrey: #F3F3F3;
+$white: #ffffff;
+$grey: #BBBBBB;
+$black: #000000;
+
+// Classes
+button.mc-black {}
