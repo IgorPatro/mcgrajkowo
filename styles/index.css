@@ -341,10 +341,10 @@ section.stats {
         height: 100%; }
         @media only screen and (min-width: 1025px) {
           section.stats .stats_wrapper .stats_imageWrapper img {
-            height: 130%; } }
+            height: 125%; } }
         @media only screen and (min-width: 1400px) {
           section.stats .stats_wrapper .stats_imageWrapper img {
-            height: 140%; } }
+            height: 133%; } }
         section.stats .stats_wrapper .stats_imageWrapper img:nth-of-type(1) {
           transform: translateX(42%); }
           @media only screen and (min-width: 1025px) {
@@ -378,6 +378,12 @@ h1.offer {
   @media only screen and (min-width: 768px) {
     h1.offer {
       font-size: 4rem; } }
+  @media only screen and (min-width: 1025px) {
+    h1.offer {
+      font-size: 4.4rem; } }
+  @media only screen and (min-width: 1400px) {
+    h1.offer {
+      font-size: 4.6rem; } }
 
 h3.offer {
   font-family: "Montserrat", sans-serif;
@@ -394,7 +400,11 @@ h3.offer {
       margin: 20px 0; } }
   @media only screen and (min-width: 1025px) {
     h3.offer {
-      font-size: 2.3rem; } }
+      font-size: 2.2rem;
+      margin: 25px 0; } }
+  @media only screen and (min-width: 1400px) {
+    h3.offer {
+      font-size: 2.4rem; } }
 
 h5.offer {
   font-family: "Montserrat", sans-serif;
@@ -411,7 +421,10 @@ h5.offer {
       font-size: 1.6rem; } }
   @media only screen and (min-width: 1025px) {
     h5.offer {
-      font-size: 1.3rem; } }
+      font-size: 1.4rem; } }
+  @media only screen and (min-width: 1400px) {
+    h5.offer {
+      font-size: 1.5rem; } }
 
 h2.offer {
   font-family: "Montserrat", sans-serif;
@@ -428,12 +441,25 @@ h2.offer {
       margin: 20px 0; } }
   @media only screen and (min-width: 1025px) {
     h2.offer {
-      font-size: 3.2rem; } }
+      font-size: 3.4rem;
+      margin: 30px 0; } }
+  @media only screen and (min-width: 1400px) {
+    h2.offer {
+      font-size: 3.7rem; } }
 
 button.mc-black.offer-btn {
-  padding-left: 0;
-  padding-right: 0;
-  width: 90%; }
+  width: 90%;
+  padding: 8px 0; }
+  @media only screen and (min-width: 500px) {
+    button.mc-black.offer-btn {
+      padding: 10px 0;
+      font-size: 1.7rem; } }
+  @media only screen and (min-width: 1025px) {
+    button.mc-black.offer-btn {
+      font-size: 1.6rem; } }
+  @media only screen and (min-width: 1400px) {
+    button.mc-black.offer-btn {
+      font-size: 1.7rem; } }
 
 section.offer {
   width: 100%; }
@@ -469,7 +495,10 @@ section.offer {
         padding: 10% 10% 20% 10%; } }
     @media only screen and (min-width: 1025px) {
       section.offer .offer_outerWrapper {
-        padding: 200px 5% 13% 5%; } }
+        padding: 180px 5% 10% 5%; } }
+    @media only screen and (min-width: 1400px) {
+      section.offer .offer_outerWrapper {
+        padding: 180px 13% 8% 13%; } }
     section.offer .offer_outerWrapper .offer_contentWrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -481,44 +510,104 @@ section.offer {
         section.offer .offer_outerWrapper .offer_contentWrapper {
           grid-template-columns: repeat(4, 1fr); } }
       section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #ffffff;
-        border-radius: 10px;
-        padding: 15px 5px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         position: relative; }
-        @media only screen and (min-width: 500px) {
-          section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile {
-            padding: 20px 10px; } }
-        @media only screen and (min-width: 768px) {
-          section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile {
-            padding: 25px 15px; } }
         section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile::before {
+          display: none;
+          content: '';
           position: absolute;
-          bottom: 100%; }
+          width: 100%;
+          z-index: 0;
+          background-size: contain;
+          background-repeat: no-repeat; }
+          @media only screen and (min-width: 1025px) {
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile::before {
+              display: block; } }
         section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile:nth-of-type(1)::before {
-          content: url("../assets/offer_man_one.png");
-          left: 0; }
+          top: -115px;
+          left: 5%;
+          height: 160px;
+          background-image: url("../assets/offer_man_one.png");
+          transform: rotate(-10deg); }
         section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile:nth-of-type(2)::before {
-          content: url("../assets/offer_man_two.png");
-          left: 20%; }
-        section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .offer_tile_icon {
-          display: flex;
+          top: -100px;
+          left: 30%;
+          height: 160px;
+          background-image: url("../assets/offer_man_two.png");
+          transform: rotate(5deg); }
+        section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile:nth-of-type(3)::after {
+          display: none;
+          content: 'MOST POPULAR';
+          width: 100%;
+          height: 40px;
+          background-color: #95AE51;
+          position: absolute;
+          bottom: calc(100% - 8px);
+          left: 0;
+          z-index: 0;
+          border-radius: 10px 10px 0 0;
           justify-content: center;
-          position: relative; }
-          section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .offer_tile_icon img.icon_shield {
-            width: 45%; }
-          section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .offer_tile_icon i {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -60%);
-            color: #333333;
-            font-size: 3rem; }
-            @media only screen and (min-width: 500px) {
-              section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .offer_tile_icon i {
-                font-size: 3.5rem; } }
+          align-items: center;
+          color: #ffffff;
+          font-weight: 700;
+          font-size: 1.5rem;
+          font-family: "Montserrat", sans-serif; }
+          @media only screen and (min-width: 1025px) {
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile:nth-of-type(3)::after {
+              display: flex; } }
+          @media only screen and (min-width: 1400px) {
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile:nth-of-type(3)::after {
+              font-size: 1.6rem; } }
+        section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile:nth-of-type(3)::before {
+          width: 120%;
+          top: -130px;
+          left: 0;
+          height: 160px;
+          background-image: url("../assets/offer_man_three.png");
+          background-position: 87%; }
+          @media only screen and (min-width: 1400px) {
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile:nth-of-type(3)::before {
+              background-position: 86%; } }
+        section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile:nth-of-type(4)::before {
+          width: 90px;
+          top: -100px;
+          right: -45px;
+          height: 160px;
+          background-image: url("../assets/offer_man_four.png");
+          transform: rotate(30deg);
+          background-position: 100%; }
+        section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .tile_inner_content {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: #ffffff;
+          border-radius: 10px;
+          padding: 15px 5px;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+          @media only screen and (min-width: 500px) {
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .tile_inner_content {
+              padding: 20px 10px; } }
+          @media only screen and (min-width: 768px) {
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .tile_inner_content {
+              padding: 25px 15px; } }
+          @media only screen and (min-width: 1025px) {
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .tile_inner_content {
+              padding: 30px 20px; } }
+          section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .tile_inner_content .offer_tile_icon {
+            display: flex;
+            justify-content: center;
+            position: relative; }
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .tile_inner_content .offer_tile_icon img.icon_shield {
+              width: 45%; }
+            section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .tile_inner_content .offer_tile_icon i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -60%);
+              color: #333333;
+              font-size: 3rem; }
+              @media only screen and (min-width: 500px) {
+                section.offer .offer_outerWrapper .offer_contentWrapper .offer_tile .tile_inner_content .offer_tile_icon i {
+                  font-size: 3.5rem; } }
 
 /*# sourceMappingURL=index.css.map */
