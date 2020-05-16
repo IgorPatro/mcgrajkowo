@@ -5,6 +5,19 @@ h1.stats {
     margin: 0 0 20px;
     position: relative;
 
+    @media #{$smartphone} {
+        font-size: 4rem;
+        margin: 0 0 40px;
+    }
+
+    @media #{$tablet} {
+        font-size: 4.3rem;
+    }
+
+    @media #{$small-desktop} {
+        font-size: 4rem;
+    }
+
     &::before {
         content: '';
         width: 60px;
@@ -13,6 +26,12 @@ h1.stats {
         position: absolute;
         bottom: -5px;
         left: 0;
+
+        @media #{$smartphone} {
+            bottom: -10px;
+            height: 5px;
+            width: 90px;
+        }
     }
 
     &::after {
@@ -23,6 +42,13 @@ h1.stats {
         position: absolute;
         bottom: -5px;
         left: 62px;
+
+        @media #{$smartphone} {
+            bottom: -10px;
+            width: 30px;
+            height: 5px;
+            left: 94px;
+        }
     }
 }
 
@@ -31,6 +57,18 @@ span.stat_content {
     font-family: $sans;
     font-weight: $bold;
     font-size: 2.1rem;
+
+    @media #{$smartphone} {
+        font-size: 2.7rem;
+    }
+
+    @media #{$tablet} {
+        font-size: 3rem;
+    }
+
+    @media #{$small-desktop} {
+        font-size: 2.7rem;
+    }
 }
 
 h3.stats {
@@ -38,20 +76,46 @@ h3.stats {
     font-weight: $regular;
     color: $grey;
     font-size: 1.1rem;
+
+    @media #{$smartphone} {
+        font-size: 1.5rem;
+    }
+
+    @media #{$tablet} {
+        font-size: 1.7rem;
+    }
+
+    @media #{$small-desktop} {
+        font-size: 1.6rem;
+    }
 }
 
 section.stats {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 
+    @media #{$smartphone} {
+        height: 75vh;
+    }
+
     .stats_wrapper {
         width: 85%;
 
+        @media #{$small-desktop} {
+            display: flex;
+        }
+
         .stats_contentWrapper {
+
+            @media #{$small-desktop} {
+                width: 50%;
+                order: 2;
+            }
+
             .stats_header {}
 
             .stats_content {
@@ -59,7 +123,21 @@ section.stats {
                 grid-template-columns: repeat(2, 1fr);
                 grid-gap: 10px;
 
+                @media #{$tablet} {
+                    width: 85%;
+                }
+
+                @media #{$small-desktop} {
+                    width: 100%;
+                    grid-gap: 15px 0;
+                }
+
+                @media #{$desktop} {
+                    width: 90%;
+                }
+
                 .stat {
+
                     &#activePlayers span.stat_content {
                         position: relative;
 
@@ -72,6 +150,12 @@ section.stats {
                             position: absolute;
                             top: 5px;
                             right: -15px;
+
+                            @media #{$tablet} {
+                                width: 12px;
+                                height: 12px;
+                                top: 10px;
+                            }
                         }
                     }
 
@@ -84,15 +168,44 @@ section.stats {
             height: 30vh;
             margin-top: 30px;
 
+            @media #{$smartphone} {
+                margin-top: 50px;
+            }
+
+            @media #{$small-desktop} {
+                width: 50%;
+                order: 1;
+                margin-top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             img {
                 height: 100%;
 
+                @media #{$small-desktop} {
+                    height: 130%;
+                }
+
+                @media #{$desktop} {
+                    height: 140%;
+                }
+
                 &:nth-of-type(1) {
                     transform: translateX(42%);
+
+                    @media #{$small-desktop} {
+                        transform: translateX(10%);
+                    }
                 }
 
                 &:nth-of-type(2) {
                     transform: translateX(1%);
+
+                    @media #{$small-desktop} {
+                        transform: translateX(-17%);
+                    }
                 }
 
             }
@@ -104,5 +217,10 @@ section.stats {
         top: 0;
         right: 0;
         max-width: 27%;
+
+        @media #{$small-desktop} {
+            top: 4%;
+            max-width: none;
+        }
     }
 }

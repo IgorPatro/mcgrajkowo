@@ -199,6 +199,16 @@ h1.stats {
   font-size: 3rem;
   margin: 0 0 20px;
   position: relative; }
+  @media only screen and (min-width: 500px) {
+    h1.stats {
+      font-size: 4rem;
+      margin: 0 0 40px; } }
+  @media only screen and (min-width: 768px) {
+    h1.stats {
+      font-size: 4.3rem; } }
+  @media only screen and (min-width: 1025px) {
+    h1.stats {
+      font-size: 4rem; } }
   h1.stats::before {
     content: '';
     width: 60px;
@@ -207,6 +217,11 @@ h1.stats {
     position: absolute;
     bottom: -5px;
     left: 0; }
+    @media only screen and (min-width: 500px) {
+      h1.stats::before {
+        bottom: -10px;
+        height: 5px;
+        width: 90px; } }
   h1.stats::after {
     content: '';
     width: 20px;
@@ -215,32 +230,79 @@ h1.stats {
     position: absolute;
     bottom: -5px;
     left: 62px; }
+    @media only screen and (min-width: 500px) {
+      h1.stats::after {
+        bottom: -10px;
+        width: 30px;
+        height: 5px;
+        left: 94px; } }
 
 h2.stats,
 span.stat_content {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   font-size: 2.1rem; }
+  @media only screen and (min-width: 500px) {
+    h2.stats,
+    span.stat_content {
+      font-size: 2.7rem; } }
+  @media only screen and (min-width: 768px) {
+    h2.stats,
+    span.stat_content {
+      font-size: 3rem; } }
+  @media only screen and (min-width: 1025px) {
+    h2.stats,
+    span.stat_content {
+      font-size: 2.7rem; } }
 
 h3.stats {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #BBBBBB;
   font-size: 1.1rem; }
+  @media only screen and (min-width: 500px) {
+    h3.stats {
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 768px) {
+    h3.stats {
+      font-size: 1.7rem; } }
+  @media only screen and (min-width: 1025px) {
+    h3.stats {
+      font-size: 1.6rem; } }
 
 section.stats {
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative; }
+  @media only screen and (min-width: 500px) {
+    section.stats {
+      height: 75vh; } }
   section.stats .stats_wrapper {
     width: 85%; }
+    @media only screen and (min-width: 1025px) {
+      section.stats .stats_wrapper {
+        display: flex; } }
+    @media only screen and (min-width: 1025px) {
+      section.stats .stats_wrapper .stats_contentWrapper {
+        width: 50%;
+        order: 2; } }
     section.stats .stats_wrapper .stats_contentWrapper .stats_content {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px; }
+      @media only screen and (min-width: 768px) {
+        section.stats .stats_wrapper .stats_contentWrapper .stats_content {
+          width: 85%; } }
+      @media only screen and (min-width: 1025px) {
+        section.stats .stats_wrapper .stats_contentWrapper .stats_content {
+          width: 100%;
+          grid-gap: 15px 0; } }
+      @media only screen and (min-width: 1400px) {
+        section.stats .stats_wrapper .stats_contentWrapper .stats_content {
+          width: 90%; } }
       section.stats .stats_wrapper .stats_contentWrapper .stats_content .stat#activePlayers span.stat_content {
         position: relative; }
         section.stats .stats_wrapper .stats_contentWrapper .stats_content .stat#activePlayers span.stat_content::after {
@@ -252,20 +314,52 @@ section.stats {
           position: absolute;
           top: 5px;
           right: -15px; }
+          @media only screen and (min-width: 768px) {
+            section.stats .stats_wrapper .stats_contentWrapper .stats_content .stat#activePlayers span.stat_content::after {
+              width: 12px;
+              height: 12px;
+              top: 10px; } }
     section.stats .stats_wrapper .stats_imageWrapper {
       width: 100%;
       height: 30vh;
       margin-top: 30px; }
+      @media only screen and (min-width: 500px) {
+        section.stats .stats_wrapper .stats_imageWrapper {
+          margin-top: 50px; } }
+      @media only screen and (min-width: 1025px) {
+        section.stats .stats_wrapper .stats_imageWrapper {
+          width: 50%;
+          order: 1;
+          margin-top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
       section.stats .stats_wrapper .stats_imageWrapper img {
         height: 100%; }
+        @media only screen and (min-width: 1025px) {
+          section.stats .stats_wrapper .stats_imageWrapper img {
+            height: 130%; } }
+        @media only screen and (min-width: 1400px) {
+          section.stats .stats_wrapper .stats_imageWrapper img {
+            height: 140%; } }
         section.stats .stats_wrapper .stats_imageWrapper img:nth-of-type(1) {
           transform: translateX(42%); }
+          @media only screen and (min-width: 1025px) {
+            section.stats .stats_wrapper .stats_imageWrapper img:nth-of-type(1) {
+              transform: translateX(10%); } }
         section.stats .stats_wrapper .stats_imageWrapper img:nth-of-type(2) {
           transform: translateX(1%); }
+          @media only screen and (min-width: 1025px) {
+            section.stats .stats_wrapper .stats_imageWrapper img:nth-of-type(2) {
+              transform: translateX(-17%); } }
   section.stats img.stats_decoration {
     position: absolute;
     top: 0;
     right: 0;
     max-width: 27%; }
+    @media only screen and (min-width: 1025px) {
+      section.stats img.stats_decoration {
+        top: 4%;
+        max-width: none; } }
 
 /*# sourceMappingURL=index.css.map */
