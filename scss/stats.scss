@@ -102,6 +102,10 @@ section.stats {
         height: 75vh;
     }
 
+    @media #{$small-desktop} {
+        height: 90vh;
+    }
+
     .stats_wrapper {
         width: 85%;
 
@@ -115,8 +119,6 @@ section.stats {
                 width: 50%;
                 order: 2;
             }
-
-            .stats_header {}
 
             .stats_content {
                 display: grid;
@@ -185,11 +187,11 @@ section.stats {
                 height: 100%;
 
                 @media #{$small-desktop} {
-                    height: 130%;
+                    height: 125%;
                 }
 
                 @media #{$desktop} {
-                    height: 140%;
+                    height: 133%;
                 }
 
                 &:nth-of-type(1) {
