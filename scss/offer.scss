@@ -155,17 +155,18 @@ section.offer {
         padding: 10% 5% 25% 5%;
         background-image: url('../assets/offer_bg.png');
         background-size: cover;
+        background-position: 30%;
 
         @media #{$tablet} {
-            padding: 10% 10% 20% 10%;
+            padding: 10% 10% 22% 10%;
         }
 
         @media #{$small-desktop} {
-            padding: 180px 5% 10% 5%;
+            padding: 180px 5% 12% 5%;
         }
 
         @media #{$desktop} {
-            padding: 180px 13% 8% 13%;
+            padding: 180px 13% 12% 13%;
         }
 
         .offer_contentWrapper {

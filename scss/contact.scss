@@ -1,0 +1,191 @@
+h6.contact {
+    font-family: $montserrat;
+    font-size: 1rem;
+    font-weight: $regular;
+
+    @media #{$smartphone} {
+        font-size: 1.3rem;
+    }
+
+    @media #{$tablet} {
+        font-size: 1.4rem;
+    }
+}
+
+section.contact {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media #{$tablet} {
+        justify-content: flex-start;
+        padding: 0 0 0 8%;
+    }
+
+    @media #{$small-desktop} {
+        padding: 0;
+        justify-content: center;
+        height: 90vh;
+    }
+
+    form {
+        width: 80%;
+
+        @media #{$smartphone} {
+            width: 70%;
+        }
+
+        @media #{$tablet} {
+            width: 60%;
+        }
+
+        @media #{$small-desktop} {
+            width: 45%;
+        }
+
+        @media #{$desktop} {
+            width: 35%;
+        }
+
+        input,
+        textarea {
+            font-family: $montserrat;
+            font-size: 1.2rem;
+            font-weight: $regular;
+            padding: 4px;
+            border: 2px solid $black;
+            border-radius: 3px;
+            transition: border .4s;
+
+            @media #{$smartphone} {
+                font-size: 1.6rem;
+                padding: 5px;
+            }
+
+            @media #{$tablet} {
+                font-size: 1.7rem;
+            }
+
+            @media #{$small-desktop} {
+                font-size: 1.5rem;
+            }
+
+            @media #{$desktop} {
+                font-size: 1.6rem;
+            }
+        }
+
+        .form-row {
+            width: 100%;
+            margin: 5px 0;
+
+            @media #{$tablet} {
+                margin: 8px 0;
+            }
+        }
+
+        .form-row.nameAndEmail_row {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: calc(50% - 2px);
+            }
+        }
+
+        .form-row.nick_row {
+            input#nick {
+                width: 100%;
+            }
+        }
+
+        .form-row.message_row {
+            textarea {
+                width: 100%;
+                max-width: 100%;
+                min-width: 100%;
+            }
+        }
+
+        .form-row.rodo_row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h6 {
+                width: 90%;
+
+                @media #{$smartphone} {
+                    width: 92%;
+                }
+            }
+
+            input#rodo {
+                width: 15px;
+                height: 15px;
+                border: 1px solid $black;
+
+                @media #{$smartphone} {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .form-row.submit_row {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+
+            @media #{$tablet} {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .contact_decoration-one,
+    .contact_decoration-two {
+        display: none;
+    }
+
+    .contact_decoration-one {
+        @media #{$small-desktop} {
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: -7%;
+            max-height: 60%;
+            transform: rotate(23deg);
+        }
+
+        @media #{$desktop} {
+            top: 5%;
+            max-height: 55%;
+        }
+    }
+
+    .contact_decoration-two {
+        @media #{$tablet} {
+            display: block;
+            position: absolute;
+            bottom: 25%;
+            right: -10%;
+            width: 32%;
+            transform: rotate(-25deg);
+        }
+
+        @media #{$small-desktop} {
+            width: auto;
+            max-height: 60%;
+            right: -7%;
+        }
+
+        @media #{$desktop} {
+            bottom: 7%;
+            max-height: 55%;
+        }
+    }
+}
