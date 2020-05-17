@@ -1,0 +1,149 @@
+// ----- FONTS
+h1.statute_text {
+    font-family: $sans;
+    font-weight: $regular;
+    font-size: 2rem;
+    position: relative;
+
+    @media #{$smartphone} {
+        font-size: 3rem;
+    }
+
+    @media #{$tablet} {
+        font-size: 3.3rem;
+    }
+
+    @media #{$small-desktop} {
+        font-size: 3.4rem;
+    }
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 3px;
+        background-color: $black;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+
+        @media #{$smartphone} {
+            bottom: -10px;
+            height: 5px;
+            width: 90px;
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 3px;
+        background-color: $green;
+        position: absolute;
+        bottom: -5px;
+        left: 62px;
+
+        @media #{$smartphone} {
+            bottom: -10px;
+            width: 30px;
+            height: 5px;
+            left: 94px;
+        }
+    }
+}
+
+h6.statute_text {
+    font-family: $montserrat;
+    font-weight: $regular;
+    font-size: 1.2rem;
+
+    @media #{$smartphone} {
+        font-size: 1.7rem;
+    }
+
+    @media #{$tablet} {
+        font-size: 1.8rem;
+    }
+
+    @media #{$small-desktop} {
+        font-size: 1.6rem;
+    }
+}
+
+section.statute_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: $black, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // visibility: hidden;
+
+    .statute {
+        width: 90%;
+        background-color: $white;
+        padding: 5px;
+
+        @media #{$smartphone} {
+            padding: 10px 15px 15px;
+        }
+
+        @media #{$small-desktop} {
+            width: 85%;
+            padding: 15px 20px 20px;
+        }
+
+        @media #{$desktop} {
+            width: 70%;
+        }
+
+        .statute_header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px 0 0;
+            align-items: flex-start;
+        }
+
+        .statute_content {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+
+            @media #{$smartphone} {
+                padding: 10px;
+                margin-top: 30px;
+            }
+
+            .statute_list {
+                list-style: url('../assets/statute_list_type.png');
+
+                .statute_list_item {
+                    font-size: 1.3rem;
+                    margin-bottom: 5px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h6.statute_text {
+                        width: 90%;
+
+                        @media #{$small-desktop} {
+                            width: calc(100% - 45px);
+                        }
+                    }
+
+                    img.statute_list_type {
+                        width: 6%;
+
+                        @media #{$small-desktop} {
+                            max-width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

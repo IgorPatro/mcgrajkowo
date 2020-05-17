@@ -21,7 +21,9 @@
 
 <body>
 
+    <!-- HOME SECTION -->
     <section class="home">
+        <!-- NAVIGATION -->
         <nav>
             <img src="assets/logo.png" alt="logo of our server" class="logo">
             <ul class="social-media_list">
@@ -31,27 +33,37 @@
             </ul>
         </nav>
 
+        <!-- HEADER WITH INTRODUCTION AND SERVER IP -->
         <header>
             <h1 class="header">Innowacyjny <span class="color-green">serwer</span></h1>
             <h2 class="header">Zarejestruj się w <span class="color-green bold">grze</span> i ciesz się miło spędzonym
                 czasem! Adres:</h2>
-            <button class="mc-black">mcgrajkowo.maxcraft.pl</button>
+            <button class="mc-black" data-clipboard-text="mcgrajkowo.maxcraft.pl"
+                id="ip_button">mcgrajkowo.maxcraft.pl</button>
         </header>
 
+        <!-- HERO IMAGE (MAN ON HORSE) -->
         <div class="home_imageWrapper">
             <img src="assets/hero_image.png" alt="hero image">
         </div>
 
+        <!-- DECORATION ON LEFT SIDE OF SECTION -->
         <img src="assets/decoration_left.png" alt="decoration" class="home_decoration">
     </section>
 
+
+    <!-- SERVER STATS SECTION -->
     <section class="stats">
+        <!-- WRAPPER FOR STATS -->
         <div class="stats_wrapper">
             <div class="stats_contentWrapper">
+
+                <!-- HEADER OF STATS SECTION -->
                 <div class="stats_header">
                     <h1 class="stats">Statystyki</h1>
                 </div>
 
+                <!-- RIGHT STATS -->
                 <div class="stats_content">
                     <div class="stat" id="activePlayers">
                         <h2 class="stats"><span class="stat_content"><span class="stat_content">1312</span></h2>
@@ -73,24 +85,31 @@
                 </div>
             </div>
 
+            <!-- STATS IMAGES (TWO MANS) -->
             <div class="stats_imageWrapper">
                 <img src="assets/stats_man_one.png" alt="man with the bow">
                 <img src="assets/stats_man_two.png" alt="man with sword">
             </div>
         </div>
 
+        <!-- DECORATION ON RIGHT SIDE OF SECTION -->
         <img src="assets/decoration_right.png" alt="decoration" class="stats_decoration">
     </section>
 
 
+    <!-- OFFER SECTION -->
     <section class="offer">
+
+        <!-- INTRO FOR OFFER SECTION (IMAGE AND TEXT) -->
         <div class="offer_intro">
             <img src="assets/offer-intro_bg.jpg" alt="offer intro backgroud" class="offer_intro_backgroud">
             <h1 class="offer">DOŁADOWANIA KONTA</h1>
         </div>
 
+        <!-- OFFER MAIN WRAPPER -->
         <div class="offer_outerWrapper">
             <div class="offer_contentWrapper">
+                <!-- TILE WITH OFFER -->
                 <div class="offer_tile">
                     <div class="tile_inner_content">
                         <div class="offer_tile_icon">
@@ -102,6 +121,7 @@
                         <button class="mc-black offer-btn">Zobacz ofertę</button>
                     </div>
                 </div>
+                <!-- TILE WITH OFFER -->
                 <div class="offer_tile">
                     <div class="tile_inner_content">
                         <div class="offer_tile_icon">
@@ -114,6 +134,7 @@
                         <button class="mc-black offer-btn">Zobacz ofertę</button>
                     </div>
                 </div>
+                <!-- TILE WITH OFFER -->
                 <div class="offer_tile">
                     <div class="tile_inner_content">
                         <div class="offer_tile_icon">
@@ -126,6 +147,7 @@
                         <button class="mc-black offer-btn">Zobacz ofertę</button>
                     </div>
                 </div>
+                <!-- TILE WITH OFFER -->
                 <div class="offer_tile">
                     <div class="tile_inner_content">
                         <div class="offer_tile_icon">
@@ -142,7 +164,11 @@
         </div>
     </section>
 
+
+    <!-- SECTION CONTACT -->
     <section class="contact">
+
+        <!-- FORM TO CONTACT -->
         <form action="">
             <div class="form-row nameAndEmail_row">
                 <input placeholder="IMIĘ" type="text" name="name" id="name">
@@ -165,47 +191,200 @@
             </div>
         </form>
 
+        <!-- DECORATIONS -->
         <img src="assets/contact_man_one.png" alt="contact decoration" class="contact_decoration-one">
         <img src="assets/contact_man_two.png" alt="contact decoration" class="contact_decoration-two">
     </section>
 
+
+    <!-- FOOTER -->
     <footer>
+
+        <!-- FOOTER MAIN CONTENT -->
         <div class="footer-content">
 
+            <!-- INFORMATIONS -->
             <div class="informations_footer-column">
                 <h3 class="footer">Informacje</h3>
-                <h4 class="footer">Regulamin</h4>
+                <h4 class="footer statuteOn">Regulamin</h4>
                 <h4 class="footer"><a href="">ItemShop</a></h4>
             </div>
 
+            <!-- IMAGES (LOGO AND FUNNY PIG) -->
             <div class="images_footer-column">
                 <img class="footer_pig" src="assets/man_on_pig.png" alt="funny man on pig">
                 <img class="footer_logo" src="assets/logo.png" alt="logo of our server in footer">
             </div>
 
+            <!-- SOCIAL MEDIA IN FOOTER -->
             <div class="social_footer-column">
                 <h3 class="footer">Zajrzyj tutaj</h3>
                 <div class="footer-social_wrapper">
                     <div class="footer-social">
                         <a href=""><i class="fab fa-facebook"></i></a>
-                        <a href=""><h5 class="footer">facebook.com/mcgrajkowo</h5></a>
+                        <a href="">
+                            <h5 class="footer">facebook.com/mcgrajkowo</h5>
+                        </a>
                     </div>
                     <div class="footer-social">
                         <a href=""><i class="fab fa-instagram"></i></a>
-                        <a href=""><h5 class="footer">instagram.com/mcgrajkowo</h5></a>
+                        <a href="">
+                            <h5 class="footer">instagram.com/mcgrajkowo</h5>
+                        </a>
                     </div>
                     <div class="footer-social">
                         <a href=""><i class="fab fa-discord"></i></a>
-                        <a href=""><h5 class="footer">discord.gg/6Cna5B</h5></a>
+                        <a href="">
+                            <h5 class="footer">discord.gg/6Cna5B</h5>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- COPYRIGHT & CREATED -->
         <h6 class="footer copyright">Copyright © 2020. All rights reserved
         </h6>
-        <h6 class="footer created">Created by <a href="">Webing Entertainment</a></h6>
+        <h6 class="footer created">Created by <a href="https://webingentertainment.pl">Webing Entertainment</a></h6>
     </footer>
+
+
+    <section class="statute_modal">
+        <div class="statute">
+            <div class="statute_header">
+                <h1 class="statute_text">Regulamin</h1>
+                <button class="close close_statute">
+                    <div class="close_inner">
+                        <div class="button_arm"></div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="statute_content">
+                <div class="statute_list">
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się obrazania graczy jak i administracji.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się stosowania wulgaryzmów.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się wykorzystywania blędów serwer- za zgłoszenie ewentualnych
+                            niedokładności przewidziana jest nagroda.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się wykorzystywania wspomagających oprogramowań (cheatów) -
+                            które w jakikolwiek sposób wpływają na rozgrywkę.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Limit CPS na naszym serwerze wynosi 15.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się umieszczania treści reklamowych na naszym serwerze.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się pisania caps-lockiem oraz floodowania.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się posiadania nazwy obraźliwej w stosunku do osób trzecich.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się rozpowszechniania danych osobowych na naszym serwerze.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Na naszym serwerze można posiadać tylko jeden adres IP (w przypadku gdy
+                            korzystasz naszego serwera a Twoje IP musi być podzielone, prosimy o kontakt z
+                            administracją).
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Zakazuje się handlowania kontami.
+                        </h6>
+                    </div>
+                    <div class="statute_list_item">
+                        <img src="assets/statute_list_type.png" class="statute_list_type">
+                        <h6 class="statute_text">
+                            Administracja serwera posiada prawo na ukaranie Cię za rzecz do której
+                            regulamin się nie odnosi, jeżli uzna to za słuszne.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--------------- JAVASCRIPT SECTION --------------->
+
+    <!-- Copy to clipboard script -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('#ip_button');
+
+        const ipBtn = document.querySelector('#ip_button');
+        ipBtn.addEventListener('click', function () {
+            ipBtn.classList.add('hovered');
+
+            setTimeout(function () {
+                ipBtn.classList.remove('hovered');
+            }, 1500);
+        });
+    </script>
+
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+
+    <!-- Functions -->
+    <script src="js/functions.js"></script>
+
+    <!-- Turning statute of server -->
+    <script>
+        const turnStatuteOn = document.querySelector('h4.statuteOn');
+        const turnStatuteOff = document.querySelector('button.close_statute');
+        const statuteModal = document.querySelector('section.statute_modal');
+
+        turnStatuteOn.addEventListener('click', function() {
+            show(statuteModal, 0.5);
+        });
+        turnStatuteOff.addEventListener('click', function() {
+            hide(statuteModal, 0.5);
+        });
+    </script>
+
+    <!-- Main js file -->
+    <script src="js/index.js"></script>
 
 </body>
 

@@ -1,3 +1,4 @@
+// ----- FONTS USED IN THIS SECTION
 h1.offer {
     font-family: $oswald;
     color: $white;
@@ -118,9 +119,12 @@ button.mc-black.offer-btn {
     }
 }
 
+
+// RIGHT STYLES
 section.offer {
     width: 100%;
 
+    // introduction - text with background
     .offer_intro {
         width: 100%;
         height: 15vh;
@@ -131,6 +135,7 @@ section.offer {
             height: 27vh;
         }
 
+        // backgroud of introduction
         img.offer_intro_backgroud {
             max-width: 100%;
             position: absolute;
@@ -140,6 +145,7 @@ section.offer {
             filter: blur(2px);
         }
 
+        // text
         h1.offer {
             position: absolute;
             top: 50%;
@@ -150,6 +156,7 @@ section.offer {
         }
     }
 
+    // outer wrapper of right offer section
     .offer_outerWrapper {
         width: 100%;
         padding: 10% 5% 25% 5%;
@@ -169,6 +176,7 @@ section.offer {
             padding: 180px 13% 12% 13%;
         }
 
+        // inner wrapper
         .offer_contentWrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -182,9 +190,11 @@ section.offer {
                 grid-template-columns: repeat(4, 1fr);
             }
 
+            // one tile - offer
             .offer_tile {
                 position: relative;
 
+                // decorations - mans above tiles
                 &::before {
                     display: none;
                     content: '';
@@ -266,6 +276,7 @@ section.offer {
                 }
 
 
+                // content of tile
                 .tile_inner_content {
                     position: relative;
                     display: flex;
@@ -288,15 +299,18 @@ section.offer {
                         padding: 30px 20px;
                     }
 
+                    // icon of offer tile
                     .offer_tile_icon {
                         display: flex;
                         justify-content: center;
                         position: relative;
 
+                        // shield
                         img.icon_shield {
                             width: 45%;
                         }
 
+                        // icon
                         i {
                             position: absolute;
                             top: 50%;

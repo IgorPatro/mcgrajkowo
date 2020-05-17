@@ -1,3 +1,4 @@
+// ------ FONTS USED IN THIS SECTION
 h1.header {
     font-family: $sans;
     position: relative;
@@ -19,6 +20,7 @@ h1.header {
         font-size: 4.3rem;
     }
 
+    // BACKGROUND ON HALF OF THE TEXT
     &::before {
         content: '';
         width: 135px;
@@ -66,10 +68,41 @@ h2.header {
     }
 }
 
+// copy to clipboard styles
+button.mc-black#ip_button {
+    position: relative;
+    transition: .5s;
+
+    &.hovered::after {
+        display: flex;
+    }
+}
+
+// informations about copy to clipboard
+button.mc-black#ip_button::after {
+    content: 'Skopiowano do schowka!';
+    width: 60%;
+    height: 30px;
+    background-color: $green;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 5px;
+    font-size: 0.6em;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+
+// ----- RIGHT STYLES
 section.home {
     height: 100vh;
     width: 100%;
 
+    // navigation
     nav {
         width: 100%;
         display: flex;
@@ -80,6 +113,7 @@ section.home {
             padding: 10px;
         }
 
+        // logo of server
         img.logo {
             height: 50px;
 
@@ -96,12 +130,14 @@ section.home {
             }
         }
 
+        // list with social media
         ul.social-media_list {
             display: flex;
             list-style-type: none;
             padding: 5px 5px 0 0;
             margin: 0;
 
+            // item
             li {
                 margin: 0 0 0 5px;
                 display: flex;
@@ -121,11 +157,12 @@ section.home {
                 a {
                     color: $black;
 
+                    // icon
                     i {
-                        font-size: 2rem;
+                        font-size: 2.3rem;
 
                         @media #{$smartphone} {
-                            font-size: 3rem;
+                            font-size: 3.3rem;
                         }
 
                         @media #{$small-desktop} {
@@ -141,6 +178,7 @@ section.home {
         }
     }
 
+    // header - introduction and ip of server
     header {
         width: 100%;
         height: 35vh;
@@ -170,6 +208,7 @@ section.home {
         }
     }
 
+    // hero image - man on horse
     .home_imageWrapper {
         display: flex;
         justify-content: center;
@@ -187,6 +226,7 @@ section.home {
             right: 8vw;
         }
 
+        // right image
         img {
             max-width: 100%;
 
@@ -200,10 +240,12 @@ section.home {
 
             @media #{$small-desktop} {
                 max-width: 100%;
+                max-height: 90vh;
             }
         }
     }
 
+    // decoration on left
     img.home_decoration {
         display: none;
 
