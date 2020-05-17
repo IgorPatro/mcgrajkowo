@@ -1,0 +1,304 @@
+h3.footer {
+    font-family: $oswald;
+    font-weight: $semi-bold;
+    font-size: 2.5rem;
+
+    @media #{$small-desktop} {
+        font-size: 2.1rem;
+    }
+
+    @media #{$desktop} {
+        font-size: 2.4rem;
+    }
+}
+
+h4.footer {
+    font-family: $montserrat;
+    font-weight: $regular;
+    font-size: 1.4rem;
+
+    @media #{$smartphone} {
+        font-size: 1.9rem;
+    }
+
+    @media #{$tablet} {
+        font-size: 2rem;
+        margin: 5px 0 0 0;
+    }
+
+    @media #{$small-desktop} {
+        font-size: 1.7rem;
+    }
+
+    @media #{$desktop} {
+        font-size: 1.9rem;
+    }
+
+    a {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+h5.footer {
+    font-family: $montserrat;
+    font-weight: $regular;
+    font-size: 1.5rem;
+}
+
+h6.footer {
+    font-family: $montserrat;
+    font-size: 0.95rem;
+    font-weight: $semi-bold;
+    display: none;
+
+    @media only screen and (min-width: 360px) {
+        display: block;
+    }
+
+    @media #{$smartphone} {
+        font-size: 1.4rem;
+    }
+
+    @media #{$tablet} {
+        font-size: 1.6rem;
+    }
+
+    @media #{$small-desktop} {
+        font-size: 1.3rem;
+    }
+
+    @media #{$desktop} {
+        font-size: 1.4rem;
+    }
+
+    a {
+        color: $green;
+        text-decoration: none;
+    }
+}
+
+footer {
+    width: 100%;
+    background-image: url('../assets/footer_bg.png');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 7% 0 5%;
+    background-position: 40%;
+
+    @media #{$tablet} {
+        padding: 10% 0 7%;
+    }
+
+    @media #{$small-desktop} {
+        padding: 7% 0 4%;
+    }
+
+    @media #{$desktop} {
+        padding: 6% 0 3%;
+    }
+
+    .footer-content {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+
+        @media #{$desktop} {
+            width: 60%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+        }
+
+        .informations_footer-column {
+            width: 32%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            @media #{$desktop} {
+                width: 100%;
+                align-items: flex-end;
+            }
+
+            h3.footer {
+                display: none;
+
+                @media #{$tablet} {
+                    display: block;
+                }
+            }
+        }
+
+        .images_footer-column {
+            width: 32%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media #{$small-desktop} {
+                justify-content: space-between;
+            }
+
+            @media #{$desktop} {
+                width: 100%;
+            }
+
+            img.footer_pig {
+                display: none;
+
+                @media #{$small-desktop} {
+                    display: block;
+                    max-width: 40%;
+                }
+            }
+
+            img.footer_logo {
+                max-height: 10vh;
+                max-width: 100%;
+
+                @media #{$small-desktop} {
+                    max-height: none;
+                    max-width: 50%;
+                }
+            }
+        }
+
+        .social_footer-column {
+            width: 32%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media #{$tablet} {
+                flex-direction: column;
+            }
+
+            @media #{$desktop} {
+                width: 100%;
+                align-items: flex-start;
+            }
+
+            .footer-social_wrapper {
+                display: flex;
+
+                @media #{$tablet} {
+                    margin-top: 10px;
+                }
+
+                @media #{$desktop} {
+                    flex-direction: column;
+                }
+
+                .footer-social {
+                    margin-right: 5px;
+
+                    @media #{$tablet} {
+                        margin-right: 8px;
+                    }
+
+                    @media #{$desktop} {
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+                        margin-bottom: 7px;
+                    }
+
+                    a {
+                        color: $black;
+
+                        i {
+                            font-size: 2rem;
+
+                            @media #{$smartphone} {
+                                font-size: 2.9rem;
+                            }
+
+                            @media #{$small-desktop} {
+                                font-size: 2.6rem;
+                            }
+
+                            @media #{$desktop} {
+                                font-size: 2.4rem;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            h3.footer {
+                display: none;
+
+                @media #{$tablet} {
+                    display: block;
+                }
+            }
+
+            h5.footer {
+                display: none;
+
+                @media #{$desktop} {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    h6.footer.copyright {
+        position: absolute;
+        bottom: 2px;
+        left: 2px;
+
+        @media #{$smartphone} {
+            bottom: 5px;
+            left: 5px;
+        }
+
+        @media #{$tablet} {
+            bottom: 10px;
+            left: 10px;
+        }
+
+        @media #{$small-desktop} {
+            bottom: 7px;
+            left: 7px;
+        }
+
+        @media #{$desktop} {
+            bottom: 10px;
+            left: 15px;
+        }
+    }
+
+    h6.footer.created {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+
+        @media #{$smartphone} {
+            bottom: 5px;
+            right: 5px;
+        }
+
+        @media #{$tablet} {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        @media #{$small-desktop} {
+            bottom: 7px;
+            right: 7px;
+        }
+
+        @media #{$desktop} {
+            bottom: 10px;
+            right: 15px;
+        }
+    }
+
+
+}
