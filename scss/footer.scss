@@ -1,3 +1,4 @@
+// ----- FONTS USED IN THIS SECTION
 h3.footer {
     font-family: $oswald;
     font-weight: $semi-bold;
@@ -16,6 +17,7 @@ h4.footer {
     font-family: $montserrat;
     font-weight: $regular;
     font-size: 1.4rem;
+    cursor: pointer;
 
     @media #{$smartphone} {
         font-size: 1.9rem;
@@ -78,6 +80,8 @@ h6.footer {
     }
 }
 
+
+// ----- RIGHT STYLES
 footer {
     width: 100%;
     background-image: url('../assets/footer_bg.png');
@@ -100,6 +104,7 @@ footer {
         padding: 6% 0 3%;
     }
 
+    // content of footer
     .footer-content {
         width: 80%;
         display: flex;
@@ -112,6 +117,7 @@ footer {
             grid-gap: 50px;
         }
 
+        // informations section
         .informations_footer-column {
             width: 32%;
             display: flex;
@@ -133,6 +139,7 @@ footer {
             }
         }
 
+        // images section (pig and logo)
         .images_footer-column {
             width: 32%;
             display: flex;
@@ -147,6 +154,7 @@ footer {
                 width: 100%;
             }
 
+            // pig image
             img.footer_pig {
                 display: none;
 
@@ -156,6 +164,7 @@ footer {
                 }
             }
 
+            // logo
             img.footer_logo {
                 max-height: 10vh;
                 max-width: 100%;
@@ -167,6 +176,7 @@ footer {
             }
         }
 
+        // social media footer section
         .social_footer-column {
             width: 32%;
             display: flex;
@@ -182,6 +192,7 @@ footer {
                 align-items: flex-start;
             }
 
+            // wrapper for right social medias
             .footer-social_wrapper {
                 display: flex;
 
@@ -193,6 +204,7 @@ footer {
                     flex-direction: column;
                 }
 
+                // icons
                 .footer-social {
                     margin-right: 5px;
 
@@ -248,6 +260,7 @@ footer {
         }
     }
 
+    // copyright
     h6.footer.copyright {
         position: absolute;
         bottom: 2px;
@@ -274,6 +287,7 @@ footer {
         }
     }
 
+    // created
     h6.footer.created {
         position: absolute;
         bottom: 2px;
