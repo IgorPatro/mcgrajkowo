@@ -19,6 +19,11 @@ section.contact {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
+
+    @media #{$smartphone} {
+        height: 65vh;
+    }
 
     @media #{$tablet} {
         justify-content: flex-start;
@@ -29,6 +34,10 @@ section.contact {
         padding: 0;
         justify-content: center;
         height: 90vh;
+    }
+
+    @media #{$desktop} {
+        height: 80vh;
     }
 
     form {
