@@ -36,6 +36,11 @@ button.mc-black {
   button.mc-black:hover {
     background-color: #95AE51;
     color: #000000; }
+  button.mc-black a {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600; }
 
 button.close {
   background: none;
@@ -162,58 +167,59 @@ button.mc-black#ip_button::after {
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
   display: none; }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px; }
+  @media only screen and (min-width: 500px) {
+    nav {
+      padding: 10px; } }
+  nav img.logo {
+    height: 50px; }
+    @media only screen and (min-width: 500px) {
+      nav img.logo {
+        height: 90px; } }
+    @media only screen and (min-width: 1025px) {
+      nav img.logo {
+        height: 70px; } }
+    @media only screen and (min-width: 1400px) {
+      nav img.logo {
+        height: 90px; } }
+  nav ul.social-media_list {
+    display: flex;
+    list-style-type: none;
+    padding: 5px 5px 0 0;
+    margin: 0; }
+    nav ul.social-media_list li {
+      margin: 0 0 0 5px;
+      display: flex; }
+      @media only screen and (min-width: 500px) {
+        nav ul.social-media_list li {
+          margin: 0 0 0 10px; } }
+      @media only screen and (min-width: 1025px) {
+        nav ul.social-media_list li {
+          margin: 0 0 0 6px; } }
+      @media only screen and (min-width: 1400px) {
+        nav ul.social-media_list li {
+          margin: 0 0 0 8px; } }
+      nav ul.social-media_list li a {
+        color: #000000; }
+        nav ul.social-media_list li a i {
+          font-size: 2.3rem; }
+          @media only screen and (min-width: 500px) {
+            nav ul.social-media_list li a i {
+              font-size: 3.3rem; } }
+          @media only screen and (min-width: 1025px) {
+            nav ul.social-media_list li a i {
+              font-size: 2.3rem; } }
+          @media only screen and (min-width: 1400px) {
+            nav ul.social-media_list li a i {
+              font-size: 2.8rem; } }
+
 section.home {
   height: 100vh;
   width: 100%; }
-  section.home nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px; }
-    @media only screen and (min-width: 500px) {
-      section.home nav {
-        padding: 10px; } }
-    section.home nav img.logo {
-      height: 50px; }
-      @media only screen and (min-width: 500px) {
-        section.home nav img.logo {
-          height: 90px; } }
-      @media only screen and (min-width: 1025px) {
-        section.home nav img.logo {
-          height: 70px; } }
-      @media only screen and (min-width: 1400px) {
-        section.home nav img.logo {
-          height: 90px; } }
-    section.home nav ul.social-media_list {
-      display: flex;
-      list-style-type: none;
-      padding: 5px 5px 0 0;
-      margin: 0; }
-      section.home nav ul.social-media_list li {
-        margin: 0 0 0 5px;
-        display: flex; }
-        @media only screen and (min-width: 500px) {
-          section.home nav ul.social-media_list li {
-            margin: 0 0 0 10px; } }
-        @media only screen and (min-width: 1025px) {
-          section.home nav ul.social-media_list li {
-            margin: 0 0 0 6px; } }
-        @media only screen and (min-width: 1400px) {
-          section.home nav ul.social-media_list li {
-            margin: 0 0 0 8px; } }
-        section.home nav ul.social-media_list li a {
-          color: #000000; }
-          section.home nav ul.social-media_list li a i {
-            font-size: 2.3rem; }
-            @media only screen and (min-width: 500px) {
-              section.home nav ul.social-media_list li a i {
-                font-size: 3.3rem; } }
-            @media only screen and (min-width: 1025px) {
-              section.home nav ul.social-media_list li a i {
-                font-size: 2.3rem; } }
-            @media only screen and (min-width: 1400px) {
-              section.home nav ul.social-media_list li a i {
-                font-size: 2.8rem; } }
   section.home header {
     width: 100%;
     height: 35vh;
@@ -1341,5 +1347,117 @@ section.pay_modal {
         @media only screen and (min-width: 500px) {
           section.pay_modal .pay_wrapper .pay_content .pay_form .pay_informations {
             margin: 5px 0 25px; } }
+
+h1.uncreated_text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 5rem; }
+  @media only screen and (min-width: 500px) {
+    h1.uncreated_text {
+      font-size: 7rem; } }
+  @media only screen and (min-width: 768px) {
+    h1.uncreated_text {
+      font-size: 7.3rem; } }
+  @media only screen and (min-width: 1025px) {
+    h1.uncreated_text {
+      font-size: 7rem; } }
+  @media only screen and (min-width: 1400px) {
+    h1.uncreated_text {
+      font-size: 7.5rem; } }
+  h1.uncreated_text span.uncreated_text {
+    position: relative; }
+    h1.uncreated_text span.uncreated_text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -5px;
+      width: 110%;
+      height: 65%;
+      background-color: #95AE51;
+      z-index: -1; }
+      @media only screen and (min-width: 768px) {
+        h1.uncreated_text span.uncreated_text::before {
+          left: -15px;
+          width: 115%; } }
+
+h3.uncreated_text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0 0 10px; }
+  @media only screen and (min-width: 500px) {
+    h3.uncreated_text {
+      font-size: 2.2rem;
+      margin: 5px 0 15px; } }
+  @media only screen and (min-width: 1025px) {
+    h3.uncreated_text {
+      font-size: 1.9rem;
+      margin: 10px 0 20px; } }
+  @media only screen and (min-width: 1400px) {
+    h3.uncreated_text {
+      font-size: 2.1rem; } }
+
+section.uncreated {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+  section.uncreated footer {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  section.uncreated .uncreated {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+    position: relative; }
+    @media only screen and (min-width: 1025px) {
+      section.uncreated .uncreated {
+        padding: 3% 0 0 0; } }
+    section.uncreated .uncreated .uncreated_wrapper {
+      width: 85%; }
+      @media only screen and (min-width: 1025px) {
+        section.uncreated .uncreated .uncreated_wrapper {
+          display: flex;
+          width: 70%;
+          justify-content: space-between; } }
+      section.uncreated .uncreated .uncreated_wrapper .uncreated-text {
+        width: 70%; }
+        @media only screen and (min-width: 1025px) {
+          section.uncreated .uncreated .uncreated_wrapper .uncreated-text {
+            width: 45%; } }
+        @media only screen and (min-width: 1400px) {
+          section.uncreated .uncreated .uncreated_wrapper .uncreated-text {
+            width: 35%; } }
+      section.uncreated .uncreated .uncreated_wrapper .uncreated-image_wrapper {
+        margin: 25px 0 0;
+        display: flex;
+        justify-content: flex-end;
+        width: 85%; }
+        @media only screen and (min-width: 1025px) {
+          section.uncreated .uncreated .uncreated_wrapper .uncreated-image_wrapper {
+            width: 50%;
+            justify-content: flex-start; } }
+        section.uncreated .uncreated .uncreated_wrapper .uncreated-image_wrapper img.uncreated-image {
+          max-width: 50vw;
+          max-height: 50vh; }
+          @media only screen and (min-width: 500px) {
+            section.uncreated .uncreated .uncreated_wrapper .uncreated-image_wrapper img.uncreated-image {
+              max-height: 45vh; } }
+          @media only screen and (min-width: 768px) {
+            section.uncreated .uncreated .uncreated_wrapper .uncreated-image_wrapper img.uncreated-image {
+              max-height: 40vh; } }
+          @media only screen and (min-width: 1025px) {
+            section.uncreated .uncreated .uncreated_wrapper .uncreated-image_wrapper img.uncreated-image {
+              max-height: 45vh; } }
+    section.uncreated .uncreated img.uncreated_decoration {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      max-width: 30%; }
+      @media only screen and (min-width: 768px) {
+        section.uncreated .uncreated img.uncreated_decoration {
+          max-width: none; } }
 
 /*# sourceMappingURL=index.css.map */

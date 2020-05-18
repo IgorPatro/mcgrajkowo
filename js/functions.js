@@ -54,3 +54,6 @@ function showPayModal(icon, name, value) {
 
 
 // PAYING FUNCTION AND VALIDATION
+function validation() {
+    
+}

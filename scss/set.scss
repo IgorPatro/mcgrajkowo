@@ -78,6 +78,13 @@ button.mc-black {
         background-color: $green;
         color: $black;
     }
+
+    a {
+        font-family: $montserrat;
+        color: $white;
+        text-decoration: none;
+        font-weight: $semi-bold;
+    }
 }
 
 button.close {
