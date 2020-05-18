@@ -96,87 +96,87 @@ button.mc-black#ip_button::after {
     display: none;
 }
 
-
-// ----- RIGHT STYLES
-section.home {
-    height: 100vh;
+// navigation
+nav {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
 
-    // navigation
-    nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 5px;
+    @media #{$smartphone} {
+        padding: 10px;
+    }
+
+    // logo of server
+    img.logo {
+        height: 50px;
 
         @media #{$smartphone} {
-            padding: 10px;
+            height: 90px;
         }
 
-        // logo of server
-        img.logo {
-            height: 50px;
+        @media #{$small-desktop} {
+            height: 70px;
+        }
+
+        @media #{$desktop} {
+            height: 90px;
+        }
+    }
+
+    // list with social media
+    ul.social-media_list {
+        display: flex;
+        list-style-type: none;
+        padding: 5px 5px 0 0;
+        margin: 0;
+
+        // item
+        li {
+            margin: 0 0 0 5px;
+            display: flex;
 
             @media #{$smartphone} {
-                height: 90px;
+                margin: 0 0 0 10px;
             }
 
             @media #{$small-desktop} {
-                height: 70px;
+                margin: 0 0 0 6px;
             }
 
             @media #{$desktop} {
-                height: 90px;
+                margin: 0 0 0 8px;
             }
-        }
 
-        // list with social media
-        ul.social-media_list {
-            display: flex;
-            list-style-type: none;
-            padding: 5px 5px 0 0;
-            margin: 0;
+            a {
+                color: $black;
 
-            // item
-            li {
-                margin: 0 0 0 5px;
-                display: flex;
+                // icon
+                i {
+                    font-size: 2.3rem;
 
-                @media #{$smartphone} {
-                    margin: 0 0 0 10px;
-                }
+                    @media #{$smartphone} {
+                        font-size: 3.3rem;
+                    }
 
-                @media #{$small-desktop} {
-                    margin: 0 0 0 6px;
-                }
-
-                @media #{$desktop} {
-                    margin: 0 0 0 8px;
-                }
-
-                a {
-                    color: $black;
-
-                    // icon
-                    i {
+                    @media #{$small-desktop} {
                         font-size: 2.3rem;
+                    }
 
-                        @media #{$smartphone} {
-                            font-size: 3.3rem;
-                        }
-
-                        @media #{$small-desktop} {
-                            font-size: 2.3rem;
-                        }
-
-                        @media #{$desktop} {
-                            font-size: 2.8rem;
-                        }
+                    @media #{$desktop} {
+                        font-size: 2.8rem;
                     }
                 }
             }
         }
     }
+}
+
+
+// ----- RIGHT STYLES
+section.home {
+    height: 100vh;
+    width: 100%;
 
     // header - introduction and ip of server
     header {
