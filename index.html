@@ -118,7 +118,8 @@
                         <h3 class="offer">BASIC</h3>
                         <h5 class="offer">Fundusze można wydawać w itemshopie w minecraft</h5>
                         <h2 class="offer">5PLN</h2>
-                        <button class="mc-black offer-btn">Zobacz ofertę</button>
+                        <button data-icon="" data-name="BASIC" data-value="5PLN" class="mc-black offer-btn">Zobacz
+                            ofertę</button>
                     </div>
                 </div>
                 <!-- TILE WITH OFFER -->
@@ -131,7 +132,8 @@
                         <h3 class="offer">ECONOMY</h3>
                         <h5 class="offer">Fundusze można wydawać w itemshopie w minecraft</h5>
                         <h2 class="offer">15PLN</h2>
-                        <button class="mc-black offer-btn">Zobacz ofertę</button>
+                        <button data-icon="fa-home" data-name="ECONOMY" data-value="15PLN"
+                            class="mc-black offer-btn">Zobacz ofertę</button>
                     </div>
                 </div>
                 <!-- TILE WITH OFFER -->
@@ -144,7 +146,8 @@
                         <h3 class="offer">PREMIUM</h3>
                         <h5 class="offer">Fundusze można wydawać w itemshopie w minecraft</h5>
                         <h2 class="offer">30PLN</h2>
-                        <button class="mc-black offer-btn">Zobacz ofertę</button>
+                        <button data-icon="fa-star" data-name="PREMIUM" data-value="30PLN"
+                            class="mc-black offer-btn">Zobacz ofertę</button>
                     </div>
                 </div>
                 <!-- TILE WITH OFFER -->
@@ -157,7 +160,8 @@
                         <h3 class="offer">VIP</h3>
                         <h5 class="offer">Fundusze można wydawać w itemshopie w minecraft</h5>
                         <h2 class="offer">60PLN</h2>
-                        <button class="mc-black offer-btn">Zobacz ofertę</button>
+                        <button data-icon="fa-bolt" data-name="VIP" data-value="60PLN" class="mc-black offer-btn">Zobacz
+                            ofertę</button>
                     </div>
                 </div>
             </div>
@@ -169,16 +173,17 @@
     <section class="contact">
 
         <!-- FORM TO CONTACT -->
-        <form action="">
+        <form id="contact_form" action="https://formspree.io/mgenoolr" method="POST">
             <div class="form-row nameAndEmail_row">
-                <input placeholder="IMIĘ" type="text" name="name" id="name">
-                <input placeholder="EMAIL" type="email" name="email" id="email" required>
+                <input class="formInput" placeholder="IMIĘ" type="text" name="name" id="name">
+                <input class="formInput" placeholder="EMAIL" type="email" name="email" id="email" required>
             </div>
             <div class="form-row nick_row">
-                <input placeholder="NICK" type="text" name="nick" id="nick" required>
+                <input class="formInput" placeholder="NICK" type="text" name="nick" id="nick" required>
             </div>
             <div class="form-row message_row">
-                <textarea placeholder="WIADOMOŚĆ" name="message" id="message" rows="8" required></textarea>
+                <textarea class="formInput" placeholder="WIADOMOŚĆ" name="message" id="message" rows="8"
+                    required></textarea>
             </div>
             <div class="form-row rodo_row">
                 <h6 class="contact">Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym
@@ -199,7 +204,6 @@
 
     <!-- FOOTER -->
     <footer>
-
         <!-- FOOTER MAIN CONTENT -->
         <div class="footer-content">
 
@@ -345,6 +349,51 @@
     </section>
 
 
+    <section class="pay_modal">
+        <div class="pay_wrapper">
+            <div class="pay_header">
+                <h2 class="pay">Wybrany pakiet:</h2>
+
+                <button class="close close_pay">
+                    <div class="close_inner">
+                        <div class="button_arm"></div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="pay_content">
+                <div class="pay_tile">
+                    <div class="offer_tile_icon">
+                        <img class="icon_shield icon_backgroud" src="assets/offer_icon.png" alt="the shield">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="offer">PREMIUM</h3>
+                    <h5 class="offer">Fundusze można wydawać w itemshopie w minecraft</h5>
+                    <h2 class="offer">30PLN</h2>
+                </div>
+
+                <div class="pay_form">
+                    <div class="inputs_row">
+                        <input type="text" placeholder="NICK" class="pay pay_nick" name="pay_nick">
+                        <input type="text" placeholder="EMAIL" class="pay pay_email" name="pay_email">
+                    </div>
+
+                    <div class="pay_informations">
+                        <h4 class="pay">Do zapłaty: <span class="color-green toPay semi-bold">30PLN</span></h4>
+                        <h4 class="pay">Nick: <span class="color-green toNick semi-bold"></span></h4>
+                        <p class="pay">Fundusze zostaną przesłane na konto, na którym figuruje podany przez ciebie nick.
+                        </p>
+                    </div>
+
+                    <div class="pay-button_wrapper">
+                        <button class="payAccept mc-black">Przejdź do płatności</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!--------------- JAVASCRIPT SECTION --------------->
 
@@ -375,16 +424,19 @@
         const turnStatuteOff = document.querySelector('button.close_statute');
         const statuteModal = document.querySelector('section.statute_modal');
 
-        turnStatuteOn.addEventListener('click', function() {
+        turnStatuteOn.addEventListener('click', function () {
             show(statuteModal, 0.5);
         });
-        turnStatuteOff.addEventListener('click', function() {
+        turnStatuteOff.addEventListener('click', function () {
             hide(statuteModal, 0.5);
         });
     </script>
 
     <!-- Main js file -->
     <script src="js/index.js"></script>
+
+    <!-- Form -->
+    <script src="js/form.js"></script>
 
 </body>
 

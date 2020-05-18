@@ -90,6 +90,14 @@ section.contact {
             @media #{$desktop} {
                 font-size: 1.6rem;
             }
+
+            &.formSucces {
+                border-color: $green;
+            }
+
+            &.formError {
+                border-color: $red;
+            }
         }
 
         // rows in form
