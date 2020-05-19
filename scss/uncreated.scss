@@ -86,7 +86,6 @@ section.uncreated {
             padding: 3% 0 0 0;
         }
 
-
         .uncreated_wrapper {
             width: 85%;
 
@@ -106,8 +105,6 @@ section.uncreated {
                 @media #{$desktop} {
                     width: 35%;
                 }
-
-
             }
 
             .uncreated-image_wrapper {
@@ -152,6 +149,4 @@ section.uncreated {
             }
         }
     }
-
-
 }

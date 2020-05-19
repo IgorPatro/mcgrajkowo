@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule home index.html
+RewriteRule itemshop itemshop.html
+
+ErrorDocument 404 /404.html
