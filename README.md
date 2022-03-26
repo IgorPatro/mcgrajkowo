@@ -11,5 +11,6 @@ Landing page for minecraft server with players database management and payments
 - P24
 
 ## Setup 
+Download repo and place it on nginx/apache server
 
 
