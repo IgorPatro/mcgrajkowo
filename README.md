@@ -1,9 +1,7 @@
 # MCGrajkowo
 
 ## Status: 
-```html
-<span style="color:orange;">Word up</span>
-```
+´´´´Deprecated´´´´
 
 ## Description
 Landing page for minecraft server with players database management and payments
