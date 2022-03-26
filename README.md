@@ -1,4 +1,5 @@
 <img alt="Server Logo" src="https://i.imgur.com/8UBJgIa.png" width="120" />
+
 # MCGrajkowo
 
 ## Status: ````Cancaled````
