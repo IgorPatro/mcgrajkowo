@@ -1,8 +1,9 @@
 # MCGrajkowo
 
-## Status: ```diff 
+## Status: 
+```diff 
 - red text
-- ```
+```
 
 ## Description
 
