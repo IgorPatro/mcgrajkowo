@@ -1,7 +1,7 @@
 # MCGrajkowo
 
 ## Status: 
-´´´´Deprecated´´´´
+````Deprecated````
 
 ## Description
 Landing page for minecraft server with players database management and payments
