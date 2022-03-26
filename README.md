@@ -1,6 +1,8 @@
 # MCGrajkowo
 
-## Status: ```diff - cancaled```
+## Status: ```diff 
+- red text
+- ```
 
 ## Description
 
