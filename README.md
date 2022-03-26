@@ -1,6 +1,6 @@
 # MCGrajkowo
 
-## Status: - cancaled
+## Status: ```diff - cancaled```
 
 ## Description
 
