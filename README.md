@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://imgur.com/a/APz7zdj">
-    <img alt="Server Logo" src="https://imgur.com/8UBJgIa" width="60" />
+    <img alt="Server Logo" src="https://i.imgur.com/8UBJgIa.png" width="60" />
   </a>
 </p>
 <h1 align="center">
