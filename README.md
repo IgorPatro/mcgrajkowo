@@ -1,11 +1,5 @@
-<p align="center">
-  <a href="https://imgur.com/a/APz7zdj">
-    <img alt="Server Logo" src="https://i.imgur.com/8UBJgIa.png" width="120" />
-  </a>
-</p>
-<h1 align="center">
-  MCGrajkowo
-</h1>
+<img alt="Server Logo" src="https://i.imgur.com/8UBJgIa.png" width="120" />
+#  MCGrajkowo
 
 ## Status: ````Cancaled````
 
