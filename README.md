@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.casadituzza.pl">
-    <img alt="Resteurant logo" src="https://imgur.com/a/APz7zdj" width="60" />
+  <a href="https://imgur.com/a/APz7zdj">
+    <img alt="Server Logo" src="https://imgur.com/8UBJgIa" width="60" />
   </a>
 </p>
 <h1 align="center">
